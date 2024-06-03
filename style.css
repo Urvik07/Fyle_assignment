@@ -318,7 +318,6 @@ body {
   flex: 1;
   max-width: 800px;
 }
-
 #project-image {
   max-width: 100%;
   height: auto;
@@ -336,7 +335,7 @@ body {
   text-align: left;
   padding-left: 30px;
   background: #F6F6F6 0% 0% no-repeat padding-box;
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .text-block.selected {
@@ -344,12 +343,45 @@ body {
   color: #fff; /* Optional: Change text color for better readability */
 }
 
-
 .text-block h3 {
   margin-bottom: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  #our-project .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .image-container {
+    order: 2;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-blocks {
+    order: 1;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .text-block {
+    padding: 1rem 1rem 1rem 1rem;
+    font: normal normal normal 14px/24px Poppins;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .text-block h3 {
+    font-size: 18px;
+  }
+}
 
 /* jknbckbsckb */
 
