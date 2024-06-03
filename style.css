@@ -181,28 +181,28 @@ body {
 .slides-wrapper {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100%; /* Adjusted to fit three slides side by side */
+  width: 100%; 
 }
 
-/* Adjusted styles for the slide and hover content */
+
 .slide {
   display: flex;
   gap: 15px;
-  flex: 1 0 100%; /* Ensure each slide takes full width */
-  position: relative; /* Make sure the container is positioned relatively */
+  flex: 1 0 100%; 
+  position: relative; 
 }
 
 .image-container {
-  position: relative; /* Ensure proper positioning for the image and hover content */
+  position: relative; 
 }
 
 .hover-content {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Cover the entire width of the parent */
+  width: 100%; 
   height: 100%;
-  background-color: #FF3366; /* Adjust the background color and opacity */
+  background-color: #FF3366; 
   color: white;
   padding-top: 35%;
   border-radius: 5px;
@@ -212,10 +212,10 @@ body {
 }
 
 .image-container:hover .hover-content {
-  opacity: 1; /* Show the content on hover */
+  opacity: 1; 
 }
 
-/* Additional styles for the hover content */
+
 .hover-content h2
 {
   font: normal normal 600 24px/40px 'Cormorant SC';
@@ -259,7 +259,7 @@ body {
 .dots {
   text-align: left;
   margin-top: 20px;
-  margin-right: 20px; /* Adjust the margin to your preference */
+  margin-right: 20px; 
 }
 
 .dot {
@@ -340,7 +340,7 @@ body {
 
 .text-block.selected {
   background: #FF3147 0% 0% no-repeat padding-box;
-  color: #fff; /* Optional: Change text color for better readability */
+  color: #fff; 
 }
 
 .text-block h3 {
@@ -438,7 +438,7 @@ body {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 2rem; /* Increase padding for a bigger look */
+  padding: 2rem; 
   margin: 0 1rem;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -451,19 +451,19 @@ body {
 }
 
 .card-icon {
-  font-size: 2.5rem; /* Increase font size for icons */
+  font-size: 2.5rem; 
   color: #ff6b6b;
-  margin-bottom: 1rem; /* Increase margin for spacing */
+  margin-bottom: 1rem;
 }
 
 .card-value {
-  font-size: 2.5rem; /* Increase font size */
+  font-size: 2.5rem; 
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .card-label {
-  font-size: 1.2rem; /* Increase font size */
+  font-size: 1.2rem; 
   color: #888;
 }
 
@@ -496,12 +496,12 @@ body {
 .feedback-card::before {
   content: '';
   position: absolute;
-  top: 15px; /* Adjust as needed to position the image */
-  left: 20px; /* Adjust as needed to position the image */
+  top: 15px;
+  left: 20px; 
   background: url('./images/Quotemarks-left.png') no-repeat;
-  background-size: 50px 50px; /* Smaller size */
-  width: 50px; /* Smaller size */
-  height: 50px; /* Smaller size *//* Make it semi-transparent */
+  background-size: 50px 50px; 
+  width: 50px; 
+  height: 50px; 
   z-index: 1;
 }
 
@@ -509,22 +509,22 @@ body {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  position: relative; /* Ensure text is on top of the background image */
+  position: relative; 
   z-index: 2;
 }
 
 .feedback-author {
   font-weight: bold;
   color: #FF3147;
-  position: relative; /* Ensure author text is on top of the background image */
+  position: relative; 
   z-index: 2;
 }
 
 footer {
-  position: relative; /* Ensure the inner image is positioned relative to this container */
+  position: relative; 
   display: flex;
-  justify-content: center; /* Center the inner image horizontally */
-  align-items: center; /* Center the inner image vertically */
+  justify-content: center; 
+  align-items: center; 
 }
 
 footer img {
@@ -533,7 +533,7 @@ footer img {
 }
 
 .footer-container {
-  position: relative; /* The first image container */
+  position: relative; 
 }
 
 .footer-container img:first-child {
@@ -541,7 +541,7 @@ footer img {
 }
 
 .footer-container img:last-child {
-  position: absolute; /* Position the second image absolutely within the first image container */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the second image */

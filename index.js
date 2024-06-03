@@ -50,25 +50,20 @@ document.addEventListener("DOMContentLoaded", function() {
       window.open("https://fylehq.com", "_blank");
     });
   });
-  // Select the image element and text block elements
+  
   const imageElement = document.querySelector('#project-image');
   const textBlocks = document.querySelectorAll('.text-block');
   
-  // Array of image sources
   const imageSources = [
     './images/image.png',
     './images/image2_optimized.png',
     './images/image3.png'
   ];
   
-  // Add click event listeners to text blocks
   textBlocks.forEach((block, index) => {
     block.addEventListener('click', () => {
-      // Remove 'selected' class from all text blocks
       textBlocks.forEach(b => b.classList.remove('selected'));
-      // Add 'selected' class to the clicked text block
       block.classList.add('selected');
-      // Update the image source based on the clicked text block
       imageElement.src = imageSources[index];
     });
   });
